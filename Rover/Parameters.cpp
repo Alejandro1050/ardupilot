@@ -222,7 +222,7 @@ const AP_Param::Info Rover::var_info[] = {
     // @Description: Cantidad de salidas PWM
     // @User: Standard
     // @Range: 1 10
-    GSCALAR(brd_pwm_count, "BRD_PWM_COUNT", 10);
+    GSCALAR(brd_pwm_count, "BRD_PWM_COUNT", 10),
 
     // variables not in the g class which contain EEPROM saved variables
 
