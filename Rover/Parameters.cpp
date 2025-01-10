@@ -222,13 +222,13 @@ const AP_Param::Info Rover::var_info[] = {
     // @Description: Cantidad de salidas PWM
     // @User: Standard
     // @Range: 1 10
-    GSCALAR(brd_pwm_count, "BRD_PWM_COUNT", 10)
+    GSCALAR(brd_pwm_count, "BRD_PWM_COUNT", 10);
 
     // variables not in the g class which contain EEPROM saved variables
 
     // @Group: COMPASS_
     // @Path: ../libraries/AP_Compass/AP_Compass.cpp
-    GOBJECT(compass,                "COMPASS_", Compass),
+    GOBJECT(compass, "COMPASS_", Compass),
 
     // @Group: SCHED_
     // @Path: ../libraries/AP_Scheduler/AP_Scheduler.cpp
