@@ -69,6 +69,7 @@ public:
         k_param_serial1_baud,   // deprecated, can be deleted
         k_param_serial2_baud,   // deprecated, can be deleted
         k_param_lights_steps,
+        k_param_brd_pwm_count,
 
         // 97: RSSI
         k_param_rssi = 97,
@@ -241,6 +242,7 @@ public:
     AP_Int8     reset_switch_chan;
     AP_Int8     initial_mode;
     AP_Int16    lights_steps;
+    AP_Int16    brd_pwm_count;
 
     // Telemetry control
     //

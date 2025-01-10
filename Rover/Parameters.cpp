@@ -209,13 +209,20 @@ const AP_Param::Info Rover::var_info[] = {
     // @Description: Driving mode for switch position 6 (1750 to 2049)
     GSCALAR(mode6,           "MODE6",         (int8_t)Mode::Number::MANUAL),
 
-    // @Param: JS_LIGHTS_STEPS
+    // @Param: LIGHTS_STEPS
     // @DisplayName: Lights brightness steps
     // @Description: Number of steps in brightness between minimum and maximum brightness
     // @User: Standard
     // @Range: 1 10
     // @Units: PWM
-    GSCALAR(lights_steps, "JS_LIGHTS_STEPS", 8),
+    GSCALAR(lights_steps, "LIGHTS_STEPS", 8),
+
+    // @Param: BRD_PWM_COUNT
+    // @DisplayName: PWM Pinouts
+    // @Description: Cantidad de salidas PWM
+    // @User: Standard
+    // @Range: 1 10
+    GSCALAR(brd_pwm_count, "BRD_PWM_COUNT", 10)
 
     // variables not in the g class which contain EEPROM saved variables
 
